@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            color: red;
+        }
+        /*input{
+            border-radius: 10px;
+            background-color: grey;
+            color: yellow;
+            padding: 5px 10px;
+        }*/
+        .texto1{
+            border-radius: 10px;
+            background-color: grey;
+            color: yellow;
+            padding: 5px 10px;
+        }
+        .texto2{
+            border-radius: 10px;
+            background-color: lightcyan;
+            color: darkblue;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <label>Nome</label><br>
+    <input type="text" id="" class="texto1" name=""><br>
+    <label>Endereço</label><br>
+    <input type="text" id="" class="texto2" name=""><br>
+
+    <label for="genero">Gênero</label><br>
+    <input type="radio" name="gen" value="M">Masculino<br>
+    <input type="radio" name="gen" value="F">Feminino<br>
+    <input type="radio" name="gen" value="O">Outros<br>
+
+    <label for="">Interesses</label><br>
+    <input type="checkbox" name="interesses">Esportes<br>
+    <input type="checkbox" name="interesses">Casa<br>
+    <input type="checkbox" name="interesses">Carro<br>
+    <input type="checkbox" name="interesses">Informática<br>
+    <input type="checkbox" name="interesses">Animais<br>
+
+    <label for="">Estado Civil</label>
+    <select name="est_civil" id="">
+        <option value=""> --- </option>
+        <option value="C">Casado</option>
+        <option value="S">Solteiro</option>
+        <option value="D">Divorciado</option>
+        <option value="A">Amasiado</option>
+        <option value="V">Viúvo</option>
+    </select><br>
+
+    <label for="">Email</label>
+    <input type="email" name="email"><br>
+
+    <label for="">Senha</label>
+    <input type="password" name="senha" placeholder="Somente números"><br>
+    <label for="">Número:</label>
+    <input type="number" name="num" placeholder="Somente números"><br>
+
+    <label for="">Descrição</label><br>
+    <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+    <label for="">Nascimento</label>
+    <input type="date" name="nas"><br>
+
+    <label for="">Cores</label>
+    <input type="color" name="cores"><br>
+
+    <label for="">Notas</label>
+    <input type="range" min="0" max="5"><br>
+
+    <label for="">Regiões</label>
+    <select name="" id="">
+        <optgroup label="SUL">
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+        </optgroup>
+        <optgroup label="CENTRO-OESTE">
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="GO">Goiás</option>
+        </optgroup>
+    </select>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="">Nome:</label>
+        <input type="text"> <br>
+        <label for="">Idade:</label>
+        <input type="number"><br>
+        <label for="">Nascimento:</label>
+        <input type="date"><br>
+        <label for="">Data e hora:</label>
+        <input type="datetime"><br>
+        <label for="">Email:</label>
+        <input type="email"><br>
+        <label for="">Altitude:</label>
+        <input type="range" min="100" max="1000" step="50"><br>
+        <label for="">Busca:</label>
+        <input type="search"><br><br>
+
+        <fieldset>
+            <legend>Gênero:</legend>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="gen" id="masculino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="gen" id="feminino">
+            <label for="outros">Outros</label>
+            <input type="radio" name="gen" id="outros">
+        </fieldset>
+
+        <label for="">Estados</label>
+        <select name="estados" id="est">
+            <optgroup label="Regiao Sul">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+             </optgroup>
+             <optgroup label="Regiao Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espírito Santo</option>
+             </optgroup>
+    </select><br>
+    <label for="">Cidade:</label>
+    <input type="text" list="cidades" name="city">
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Niterói"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Petrópolis"></option>
+        <option value="Teresópolis"></option>
+    </datalist>
+
+    </form>
+</body>
+</html>

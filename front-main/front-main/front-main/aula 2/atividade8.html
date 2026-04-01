@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1, n2, sin
+        n1 = parseInt(prompt("Informe um número: "))
+        n2 = parseInt(prompt("Informe outro número: "))
+        sin = prompt("Informe a operação desejada [+ - * /]:")
+
+        switch(sin){
+            case '+': alert("O resultado da adição é: " + (n1+n2));break;
+            case '-': alert("O resultado da subtração é: " + (n1-n2));break;
+            case '/': alert("O resultado da divisão é: " + (n1/n2));break;
+            case '*': alert("O resultado da multiplicação é: " + (n1*n2));break;
+            default: alert("A conta não pode ser efetuada!")
+          
+        }
+    </script>
+</body>
+</html>

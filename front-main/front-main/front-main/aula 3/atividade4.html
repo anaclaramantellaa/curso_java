@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1,n2,t=1
+        
+        //n1 = parseInt(prompt("Escolha um número: "))
+        n1 = Math.round(Math.random()*20);
+        
+        for (i=1;i<=4;i++){
+            n2 = parseInt(prompt("Informe o número que você acha que é desconhecido: "))
+            
+            if (n1==n2){
+                alert("Parabéns você acertou! O número desconhecido é: "+n1)
+                break            
+            }else if (n2>20){
+                    alert("O número informado não é permitido.")
+                    break
+                    } else if(n1>n2){
+                        alert("O número desconhecido é maior.")
+                        t++
+                    }
+                    else if (n1<n2){
+                        alert("O número desconhecido é menor.")
+                        t++
+                    }
+           
+        }
+        if (t>=4){
+                alert("Você perdeu! Número de tentativas = "+ (t-1))
+        }
+    </script>
+</body>
+</html>

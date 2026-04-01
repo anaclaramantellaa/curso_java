@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="tabuada" >
+    <button onclick="print()">Clique aqui</button>
+    <script>
+        function print(){
+            let n 
+            //n = parseInt(document.getElementById("tabuada").value)
+            n = parseInt(document.querySelector("#tabuada").value)
+            for(i=1;i<11;i++){
+            document.write(n + " X " + i + " = " + (n*i) + "<br>")
+        }
+    }
+    </script>
+</body>
+</html>

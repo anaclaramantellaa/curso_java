@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aula de JavaScript com HTML</h1>
+   <button onclick="boasVindas()">Clique aqui</button> <br>
+        <p id="resultado">Arquivo html e JavaScript <br></p>
+
+
+   <script>
+            function boasVindas(){
+            let resultado = document.getElementById("resultado")   
+            let nome = prompt ("Diga seu nome:")
+            resultado.innerHTML = ("Boa tarde, " + nome)                         
+        }
+    </script>
+ </body>
+</html>

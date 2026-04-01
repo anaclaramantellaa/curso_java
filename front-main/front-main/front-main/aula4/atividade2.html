@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operações Matemáticas</h1>
+    <hr>
+    <input type="text" id="texto1"><br><br>
+    <input type="text" id="texto2"><br><br>
+    <button onclick="adicionar()">Somar</button>
+    <button onclick="diminuir()">Subtrair</button>
+    <button onclick="vezes()">Multiplicar</button>
+    <button onclick="divisao()">Dividir</button>
+    <hr>
+    <p id="resultado"> </p>
+
+    <script>
+        let n1 = document.getElementById("texto1");
+        let n2 = document.getElementById("texto2");
+        let res = document.getElementById("resultado")
+
+        function adicionar(){
+            let soma = parseInt(n1.value) + parseInt(n2.value)
+            resultado.innerHTML = soma }
+        
+        function diminuir(){
+            let soma = parseInt(n1.value) - parseInt(n2.value)
+            resultado.innerHTML = soma }
+
+        function vezes(){
+            let soma = parseInt(n1.value) * parseInt(n2.value)
+            resultado.innerHTML = soma }
+
+        function divisao(){
+            let soma = parseInt(n1.value) / parseInt(n2.value)
+            resultado.innerHTML = soma }
+    </script> 
+
+</body>
+</html>

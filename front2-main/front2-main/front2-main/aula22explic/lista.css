@@ -1,0 +1,93 @@
+*{
+    margin: 0; /*zera o espaço externo*/
+    padding: 0; /*zera o espaço interno*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+    background: #117035; /*altera cor de fundo*/
+    padding: 3rem; /*adiciona espaçamento interno, 1rem=16px*/
+    margin: 0.5rem; /*adiciona o espaçamento externo*/
+    color: white; /*cor do texto*/
+    text-align: center; /*alinhamento dos itens no centro da tela*/
+}
+h1{
+    padding-bottom: 3rem; /* posicionna o elemento a uma distancia da parte inferior do elemento pai*/
+}
+input{
+    margin: 0; /*retira as margens*/
+    border: none; /*retira todas as bordas*/
+    border-radius: 0; /*retira todo o arredondamento padrão das bordas*/
+    width: 75%; /*faz ele ocupar 75% da largura do "article" elemento-pai*/
+    padding: 0.6rem; /*espaçamento interno*/
+    font-size: 1rem; /*tamanho da fonte dentro do input*/
+    outline: none; /*tira toda borda quando ele for focado*/
+}
+#btnAdicionar{
+    padding: 0.6rem; /*espaçamento interno*/
+    width: 25%; 
+    background: rgb(200, 30, 30);
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer; /*altera o formato do cursor*/
+    transition: 0.3s; /*tempo de transição*/
+    border-radius: 0;
+    border: none;
+    outline: none; /*tira toda a borda quando ele é selecionado*/
+}
+#btnAdicionar:hover{ /*ao passar o mouse*/
+    background: #44dd33;
+}
+.flex{
+    display: flex; /*faz os elementos filhos ficarem em linha um ao lado do outro */
+}
+#lista{
+    margin: 0.5rem;
+}
+ul{
+    list-style: none; /*retira dos pontos (marcadores) da lista*/
+}
+ul li{
+    cursor: pointer;
+    position: relative; /*posição relativa ao elemento "before" que iremos adicionar mais abaixo(depois)*/
+    padding: 12px 8px 12px 40px; /*espaçamento das margens internas na ordem:cima,direita,baixo,esquerda*/
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+/*seleciona um a cada quatro elementos de qualquer grupo de elementos "irmãos", começando do "quarto" elemento(4,8,12,etc)*/
+:nth-child(4n){
+    color: lime;
+}
+ul li:nth-child(even){ /*seleciona o elemento par*/
+    background: #f9f955;
+}
+ul li:nth-child(odd){ /*seleciona o elemento ímpar*/
+    background: #f9f9c5;
+}
+ul li.checado{ /*selecionar o item que esteja com a class 'checado'*/
+    background: #888;
+    color: #fff;
+    text-decoration: line-through; /*letra fica tachado*/
+}
+ul li.checado::before{ /*insere algo "antes" do conteúdo de cada elemento*/
+    content: ""; /*definidos aqui o que iremos inserir antes do "nome"*/
+    position: absolute; /*posicionamento absoluto com indicação abaixo de posicionamento top e left*/
+    border: #fff solid; /*insere uma borda de cor branca, linha contínua*/
+    top: o.6rem; /*posição superior*/
+    left: 1rem; /*posição alinhado a esquerda*/
+    height: 1rem; /*altura do elemento*/
+    width: 10px; /*comprimento do elemento*/
+    border-width: 0 2xp 2px 0; /*borda do elemento, com a espessura referente a 0-superior , 2px-direita, 2px-inferior e 0-esquerda*/
+    transform: rotate(45deg); /*rotacionar o item em 45 graus*/
+}
+.fechar{
+    position: absolute;
+    right: 0; /*posicionamento a direita em zero*/
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+.fechar:hover{
+    background: #f44336;
+    color: white;
+}

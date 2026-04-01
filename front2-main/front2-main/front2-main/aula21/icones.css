@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background: linear-gradient(315deg, #fff 0%, green 75%);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.botao{
+    display: block;
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.icone{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.botao:hover{
+    color: white;
+}
+.caixa .botao:nth-child(1):hover .icone{ /*hipopótamo*/
+    background: #808080;
+}
+.caixa .botao:nth-child(2):hover .icone{ /*sapo*/
+    background: #008000;
+}
+.caixa .botao:nth-child(3):hover .icone{ /*cavalo*/
+    background: #5C4033;
+}
+.caixa .botao:nth-child(4):hover .icone{ /*gato*/
+    background: yellow;
+}
+.caixa .botao:nth-child(5):hover .icone{ /*peixe*/
+    background: #0000FF;
+}
+.icone i{
+    font-size: 1.5rem;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+.botao span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.botao:hover{
+    width: 200px;
+}
+.caixa .botao:nth-child(1):hover span{ /*hipopótamo*/
+    color: #808080;
+}
+.caixa .botao:nth-child(2):hover span{ /*sapo*/
+    color: #008000;
+}
+.caixa .botao:nth-child(3):hover span{ /*cavalo*/
+    color: #5C4033;
+}
+.caixa .botao:nth-child(4):hover span{ /*gato*/
+    color: yellow;
+}
+.caixa .botao:nth-child(5):hover span{ /*peixe*/
+    color: #0000FF;
+}

@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.conteiner{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60px auto 60px;
+}
+.cabecalho, .rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: navy;
+}
+.cabecalho h1, .rodape address{
+    color: whitesmoke;
+    font-weight: 500;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galeria{
+    width: 700px;
+    height: 300px;
+    overflow: hidden;
+}
+.galeria .fotos{
+    width: 700%;
+    animation: animacao 18s infinite;
+}
+.galeria .fotos img{
+    width: 14.2%;
+}
+@keyframes animacao{
+    0%  {margin-left: 0;}
+    10%  {margin-left: 0;}
+    14%  {margin-left: -100%;}
+    27%  {margin-left: -100%;}
+    31%  {margin-left:-200%;}
+    44%  {margin-left:-200%;}
+    48%  {margin-left:-300%;}
+    60%  {margin-left:-300%;}
+    64%  {margin-left:-400%;}
+    77%  {margin-left:-400%;}
+    80%  {margin-left:-500%;}
+    95%  {margin-left:-500%;}
+    100%  {margin-left:-600%;}
+}
+.rodape a{
+    color: red;
+}

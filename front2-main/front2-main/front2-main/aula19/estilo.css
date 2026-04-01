@@ -1,0 +1,124 @@
+body{
+    margin: 0 auto;
+    width: 960px;
+    padding: 0px;
+    background: blue url(fundo.svg) repeat-x;
+}
+#cabecalho img{
+    float: left;
+}
+#social{
+    float: right;
+    margin-top: 40px;
+}
+#social img{
+    width: 32px;
+    height: 32px;
+}
+#menu{
+    float: left;
+    margin-top: 90px;
+    width: 450px;
+}
+#menu ul{
+    list-style: none;
+    background: linear-gradient(to bottom, #ddd, #666);
+    padding: 0px;
+    margin: 0px;
+}
+#menu ul li{
+    height: 60px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    border-right: 1px solid #060;
+}
+#menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+#menu ul li a:hover{
+    color: #000;
+    font-weight: 700;
+}
+#slider{
+    width: 960px;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#slider img{
+    width: 960px;
+    height: 380px;
+}
+#b1 {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+#b2 {
+    position: relative;
+    left: 0px;
+    top: -388px;
+}
+#b3 {
+    position: relative;
+    left: 0px;
+    top: -776px;
+}
+#lateral{
+    float: right;
+    background: #ddd;
+    width: 200px;
+    border-radius: 10px;
+   padding: 5px;
+}
+#lateral h1{
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-top: 0;
+}
+#lateral h2{
+    font-size: 14px;
+}
+#lateral p{
+    text-align: justify;
+    font-size: 0.8rem;
+}
+.fix{
+    clear: both;
+}
+#main h1{
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    color: red;
+}
+#main{
+    background: #eee;
+    width: 730px;
+    border-radius: 10px;
+    padding: 5px;
+}
+#main p{
+    text-align: justify;
+}
+footer{
+    color: #888;
+    border: 1px solid #000;
+    margin-top: 15px;
+}
+footer p{
+    display: inline-block;
+    width: 316px;
+    text-align: center;
+}
+footer p:hover{
+    color: darkblue;
+    cursor: pointer;
+}
+footer:hover {
+    background-color: aqua;
+}
